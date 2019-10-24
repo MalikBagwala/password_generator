@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section id="main">
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h5>Password Generator</h5>
+            <input class="password-field" id="password-output" type="text" />
+          </div>
+          <hr />
+          <div class="card-body">
+            <div class="row">
+              <label for="length">Length</label>
+              <input
+                id="length"
+                type="text"
+                name="length"
+                type="number"
+                min="1"
+                max="30"
+              />
+            </div>
+            <div class="row">
+              <label for="upperCase">Include uppercase letters</label>
+              <input type="checkbox" name="upperCase" id="upperCase" />
+            </div>
+            <div class="row">
+              <label for="lowerCase">Include lowercase letters</label>
+              <input type="checkbox" name="lowerCase" id="lowerCase" />
+            </div>
+            <div class="row">
+              <label for="numbers">Include numbers</label>
+              <input type="checkbox" name="numbers" id="numbers" />
+            </div>
+            <div class="row">
+              <label for="symbols">Include symbols</label>
+              <input type="checkbox" name="symbols" id="symbols" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/utils.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/ui.js" defer></script>
+  </body>
+</html>
