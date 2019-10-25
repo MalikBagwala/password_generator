@@ -23,7 +23,7 @@ function generatePassword(length = 10, validCharacters) {
   let randomElement;
 
   for (i = 0; i < length; i++) {
-    // Grabs a random index between 0 and length of the valid characters  - 1
+    // Grabs a random index between 0 and length of the 'valid characters'  - 1
     randomIdx = random(0, validCharacters.length - 1);
     // Grabs the element at that position
     randomElement = validCharacters[randomIdx];

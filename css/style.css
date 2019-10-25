@@ -7,6 +7,8 @@
 }
 :root {
   --gray-800: #182026;
+  --gray-500: #394b59;
+  --gray-400: #5c7080;
 }
 hr {
   margin: 0.6rem 0;
@@ -22,13 +24,14 @@ hr {
   height: 100%;
   margin: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .card {
   background: white;
-  padding: 1rem;
+  padding: 2rem;
   /* width: 40%; */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -40,6 +43,7 @@ hr {
   color: var(--gray-800);
   text-align: center;
   font-size: 1.3rem;
+  margin: 0.5rem 0;
 }
 .password-field {
   width: 100%;
@@ -48,7 +52,45 @@ hr {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+.card hr {
+  margin: 1.3rem 0;
+}
 .card .row {
   display: flex;
   justify-content: space-between;
+  margin: 1.3rem 0;
+}
+
+.card button.btn {
+  background: var(--gray-800);
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+p.time-required-text {
+  margin-top: 2rem;
+  color: var(--gray-500);
+}
+#time-required {
+  font-size: 2rem;
+}
+.card button.btn:hover {
+  background: var(--gray-500);
+  transition: all 0.2s ease-in-out;
+}
+
+.card button.btn:active {
+  background: var(--gray-400);
+}
+.bold {
+  font-weight: 600;
+}
+
+input[name="length"] {
+  width: 25%;
 }

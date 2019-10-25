@@ -46,3 +46,12 @@ function getValidCharacters(
   }
   return output;
 }
+
+function calculateTimeRequired(length, combinations) {
+  const totalCombinations = Math.pow(length, combinations);
+  // passowrds / per second
+  const modernComputing = 17042497.3;
+  // Total time required in years
+  const totalTime = (totalCombinations / modernComputing) * 3.171e-8;
+  return totalTime;
+}
