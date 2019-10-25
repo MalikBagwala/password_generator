@@ -6,6 +6,6 @@ This project allows the user to create random passwords which are upto `base67`,
 <img src="https://github.com/MalikBagwala/password_generator/blob/master/img/thumbnail.png" width="100%" height="auto">
 </a>
 
-<h6>
+<h3>
 <a href="https://objective-leakey-48f6fc.netlify.com" target="__blank">View Live </a>
-</h6>
+</h3>
